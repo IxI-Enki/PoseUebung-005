@@ -60,7 +60,7 @@ internal class Program
     Console.WriteLine("Spezialistenaufgabe:");
     Console.WriteLine(penguin.ToString());
 
-
+    /*
     Fish wale = new("Wal");
     Mammal faultier = new("Faultier");
 
@@ -135,5 +135,6 @@ internal class Program
       o28 + "\n" + 
       o29 + "\n"
       );
+    */
   }
 }
