@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Zoo/.vs/Zoo/v17
+/Zoo/.vs/Zoo/FileContentIndex
+/Zoo/Zoo.ConApp/obj
+/Zoo/Zoo.ConApp/bin/Debug/net8.0
+/Zoo/Zoo.Mono/obj
