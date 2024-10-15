@@ -1,2 +1,1 @@
-# PoseUebung-005
-Zoo
+# PoseUebung-005 -- Zoo
