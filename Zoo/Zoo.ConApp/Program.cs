@@ -2,42 +2,44 @@
 
 internal class Program
 {
-  static void Main(string[ ] args)
+  static void Main()
   {
     Console.WriteLine("Zoo");
 
-    Fish goldfisch = new Fish("Goldfisch");
-    Fish zander = new Fish("Zander");
-    Fish piranha = new Fish("Piranha");
-    Bird canary = new Bird("Kanari");
-    Bird chicken = new Bird("Huhn");
-    Bird hawk = new Bird("Falke");
-    Bird kiwi = new Bird("Kiwi");
-    Bird eagle = new Bird("Adler");
-    Mammal human = new Mammal("Mensch");
-    Mammal dog = new Mammal("Hund");
-    Mammal cat = new Mammal("Katze");
-    Mammal lion = new Mammal("Löwe");
-    Mammal horse = new Mammal("Pferd");
-    Mammal rabbit = new Mammal("Hase");
-    Mammal cow = new Mammal("Kuh");
+    Fish goldfisch = new("Goldfisch");
+    Fish piranha = new("Piranha");
+    Fish zander = new("Zander");
 
-    Set pets = new Set();
+    Bird chicken = new("Huhn");
+    Bird canary = new("Kanari");
+    Bird eagle = new("Adler");
+    Bird hawk = new("Falke");
+    Bird kiwi = new("Kiwi");
+
+    Mammal rabbit = new("Hase");
+    Mammal human = new("Mensch");
+    Mammal horse = new("Pferd");
+    Mammal lion = new("Löwe");
+    Mammal cat = new("Katze");
+    Mammal dog = new("Hund");
+    Mammal cow = new("Kuh");
+
+    Set pets = new();
     pets.Add(goldfisch);
     pets.Add(canary);
-    pets.Add(dog);    
+    pets.Add(dog);
     pets.Add(cat);
     pets.Add(rabbit);
     Console.WriteLine($"{pets.Count} Haustiere");
     Console.WriteLine(pets.ToString());
 
-    Set farmedAnimals = new Set();
+    Set farmedAnimals = new();
     farmedAnimals.Add(cow);
     farmedAnimals.Add(horse);
     farmedAnimals.Add(zander);
     farmedAnimals.Add(rabbit);
     farmedAnimals.Add(chicken);
-    Console.WriteLine($"{farmedAnimals.Count} Nutztiere" );
+    Console.WriteLine($"{farmedAnimals.Count} Nutztiere");
     Console.WriteLine(farmedAnimals.ToString());
 
     Set farmedPets = pets * farmedAnimals;
@@ -53,10 +55,10 @@ internal class Program
     Console.WriteLine(uneatableAnimals.ToString());
 
     // Spezialistenaufgabe: Zum Testen folgende Zeilen aktiv setzen.
-     Bird penguin = new Bird("Pinguin",true);
-     Console.WriteLine("Spezialistenaufgabe:");
-     Console.WriteLine(penguin.ToString());
-     
-     Console.ReadLine();
+    Bird penguin = new("Pinguin" , true);
+    Console.WriteLine("Spezialistenaufgabe:");
+    Console.WriteLine(penguin.ToString());
+
+    Console.ReadLine();
   }
 }
